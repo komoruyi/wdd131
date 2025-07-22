@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan - Land of the Rising Sun</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/japan2.webp">
+                <source media="(max-width: 1200px)" srcset="images/japan3.webp">
+                <img src="images/japan1.webp" alt="Mount Fuji with cherry blossoms in Japan" loading="lazy">
+            </picture>
+            <div class="hero-content">
+                <h1>Japan</h1>
+                <p>Discover Japan, A Place I Plan to Visit</p>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <h2>Welcome to Japan</h2>
+            <p>Japan is an island nation in East Asia, known for its rich cultural heritage, cutting-edge technology, and breathtaking natural beauty. From the bustling streets of Tokyo to the serene temples of Kyoto, Japan offers a unique blend of ancient traditions and modern innovation.</p>
+            <p>With its distinctive seasons, including the famous cherry blossom season in spring, Japan provides visitors with unforgettable experiences throughout the year. The country is renowned for its cuisine, art, architecture, and the warm hospitality of its people.</p>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <div class="weather-icon-mobile">
+                    <img src="images/japan8.webp" alt="Partly cloudy weather icon" loading="lazy">
+                </div>
+                <div class="weather-details">
+                    <p><strong>Temperature:</strong> <span id="temperature">22°C</span></p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind Speed:</strong> <span id="wind-speed">8 km/h</span></p>
+                    <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section class="attractions">
+            <h2>Must-Visit Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="images/japan5.webp" alt="Mount Fuji" loading="lazy">
+                    <h3>Mount Fuji</h3>
+                    <p>Japan's iconic sacred mountain and highest peak, perfect for hiking and viewing.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="images/japan3.webp" alt="Kyoto Temples" loading="lazy">
+                    <h3>Kyoto Temples</h3>
+                    <p>Ancient temples and shrines showcasing traditional Japanese architecture and culture.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="images/japan2.webp" alt="Tokyo Skyline" loading="lazy">
+                    <h3>Tokyo</h3>
+                    <p>The vibrant capital city blending ultramodern skyscrapers with traditional culture.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="images/japan6.webp" alt="Cherry Blossoms" loading="lazy">
+                    <h3>Cherry Blossoms</h3>
+                    <p>Experience the magical sakura season with beautiful pink blooms across the country.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Section -->
+        <section class="culture">
+            <h2>Culture & Traditions</h2>
+            <div class="culture-content">
+                <div class="culture-text">
+                    <h3>Rich Heritage</h3>
+                    <p>Japan's culture is deeply rooted in traditions that have been preserved for centuries. From the ancient art of tea ceremony to the discipline of martial arts, Japanese culture emphasizes harmony, respect, and attention to detail.</p>
+                    <ul>
+                        <li>Traditional tea ceremony (Chanoyu)</li>
+                        <li>Martial arts like Karate and Judo</li>
+                        <li>Beautiful kimono and yukata clothing</li>
+                        <li>Zen Buddhism and meditation practices</li>
+                    </ul>
+                </div>
+                <div class="culture-image">
+                    <img src="images/japan1.webp" alt="Traditional Japanese tea ceremony" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cuisine Section -->
+        <section class="cuisine">
+            <h2>Japanese Cuisine</h2>
+            <p>Japanese cuisine is renowned worldwide for its emphasis on fresh, seasonal ingredients and beautiful presentation. From sushi and ramen to tempura and wagyu beef, Japan offers a culinary journey like no other.</p>
+            <div class="cuisine-grid">
+                <div class="cuisine-item">
+                    <h4>Sushi</h4>
+                    <p>Fresh fish and rice artfully prepared</p>
+                </div>
+                <div class="cuisine-item">
+                    <h4>Ramen</h4>
+                    <p>Hearty noodle soup with rich broth</p>
+                </div>
+                <div class="cuisine-item">
+                    <h4>Tempura</h4>
+                    <p>Lightly battered and fried vegetables and seafood</p>
+                </div>
+                <div class="cuisine-item">
+                    <h4>Wagyu</h4>
+                    <p>Premium marbled beef known for its tenderness</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Japan Travel Guide. All rights reserved.</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
