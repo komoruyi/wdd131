@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album (Filtered)</title>
+    <!-- Google Fonts Example -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Mobile-first CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <!-- Desktop/Large view CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 700px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="site-title">Temple Album</span>
+        <button id="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+        <nav id="main-nav">
+            <a href="#" data-filter="home">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>My Favorite Temples</h1>
+        <section class="album-grid" id="temple-album">
+            <!-- Temple cards will be injected here by JS -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Kenneth Osaohenmwanta Omoruyi | WDD 131 | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
