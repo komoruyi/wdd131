@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Plan – Temple Album</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Example Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="siteplan.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- Example logo, you can replace with your own SVG or PNG -->
+      <span class="logo-icon">🏛️</span>
+      <span class="site-name">Temple Album</span>
+    </div>
+    <p class="domain">Optional domain: <strong>templealbum.org</strong></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Temple Album</h2>
+      <p>
+        <strong>Temple Album</strong> — This name reflects a digital collection and showcase of temples around the world. It's easy to remember, descriptive, and well-suited for a photo gallery site.
+      </p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>
+        The purpose of Temple Album is to provide information and a visual catalog of temples worldwide, including images, historical data, and interactive features such as filtering by region, era, or size.
+      </p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>Which temples were built before 1900?</li>
+        <li>Where can I find images and details about the largest temples?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Color Schema</h2>
+      <ul>
+        <li><span class="color-sample accent"></span> <strong>Accent Blue (#314e52)</strong> — Used for headings, navigation, and footer.</li>
+        <li><span class="color-sample background"></span> <strong>Background Light (#f6f9f8)</strong> — Used for the main page background.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <ul>
+        <li><span style="font-family: 'Montserrat', sans-serif;">Montserrat</span> — Used for headings and the logo.</li>
+        <li><span style="font-family: 'Roboto', sans-serif;">Roboto</span> — Used for body text and paragraphs.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Wireframe</h2>
+      <div class="wireframes">
+        <div>
+          <h3>Mobile View</h3>
+          <!-- Replace wireframe-mobile.png with your own sketch or diagram -->
+          <img src="wireframe-mobile.png" alt="Mobile wireframe sketch" style="max-width:100%;border:1px solid #ccc;">
+        </div>
+        <div>
+          <h3>Desktop View</h3>
+          <img src="wireframe-desktop.png" alt="Desktop wireframe sketch" style="max-width:100%;border:1px solid #ccc;">
+        </div>
+      </div>
+      <p>
+        Wireframes show navigation at the top, a hero heading, temple card grid, and a footer. Mobile view stacks sections vertically; desktop view uses a three-column grid for cards.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Kenneth Osaohenmwanta Omoruyi | Site Plan | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+  <script>
+    // Footer year and last modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
