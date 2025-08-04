@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  }
+  h1 {
+    text-align: center;
+    color: #223366;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  label, legend {
+    font-weight: 600;
+    color: #223366;
+    margin-bottom: 0.2rem;
+  }
+  .required:after {
+    content: " *";
+    color: #d92727;
+  }
+  input[type="text"], select, textarea, input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #bccad6;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f3f7fd;
+  }
+  input[type="submit"] {
+    background: #2a6df8;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  input[type="submit"]:hover {
+    background: #1546a0;
+  }
+  .stars label {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #f4c542;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #223366;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+      width: 98vw;
+    }
+    form {
+      gap: 0.7rem;
+    }
+  }

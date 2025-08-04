@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <main>
+    <h1>Product Review Form</h1>
+    <form method="get" action="review.html">
+      <!-- Product Name -->
+      <label for="product">Product Name:</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- Options are inserted by JS -->
+      </select>
+      <br>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <div class="stars">
+          <input type="radio" id="star1" name="rating" value="1" required>
+          <label for="star1">&#9733;</label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2">&#9733;&#9733;</label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">&#9733;&#9733;&#9733;</label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+        </div>
+      </fieldset>
+      <br>
+
+      <!-- Date of Installation -->
+      <label for="install-date">Date of Installation:</label>
+      <input type="date" id="install-date" name="install-date" required>
+      <br>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features:</legend>
+        <input type="checkbox" id="feature1" name="features" value="Easy Setup">
+        <label for="feature1">Easy Setup</label>
+        <input type="checkbox" id="feature2" name="features" value="Durable">
+        <label for="feature2">Durable</label>
+        <input type="checkbox" id="feature3" name="features" value="High Efficiency">
+        <label for="feature3">High Efficiency</label>
+        <input type="checkbox" id="feature4" name="features" value="Low Maintenance">
+        <label for="feature4">Low Maintenance</label>
+        <input type="checkbox" id="feature5" name="features" value="Affordable">
+        <label for="feature5">Affordable</label>
+      </fieldset>
+      <br>
+
+      <!-- Written Review -->
+      <label for="review">Written Review:</label>
+      <textarea id="review" name="review" rows="4" cols="40"></textarea>
+      <br>
+
+      <!-- User Name -->
+      <label for="username">Your Name:</label>
+      <input type="text" id="username" name="username">
+      <br>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 🌺 Kenneth osaohenmwanta Omoruyi 🌺 | Ghana | All rights reserved.</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
